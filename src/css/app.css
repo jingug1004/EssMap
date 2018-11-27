@@ -1,0 +1,1131 @@
+/* Your app styles here */
+html {
+  /* height: 110%; */
+  /* background: linear-gradient(red, yellow, green); */
+}
+body {
+    overscroll-behavior-y: contain;
+}
+.no-drag {
+	-ms-user-select: none;
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	user-select:none;
+  touch-action: none;
+}
+
+.noneMargin {
+  margin: inherit!important;
+}
+
+#controllerDiv {
+    z-index: 5000;
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: transparent;
+    cursor: -webkit-grab;
+    /*pointer-events: none;*/
+}
+.cursorGrabbing {
+    cursor: -webkit-grabbing;
+}
+
+.pointer {
+  cursor:pointer;
+}
+
+/*img {
+	pointer-events: none;
+}*/
+
+.fab-right-top {
+	z-index: 5010;
+}
+
+.fab-left-top.txt {
+  top: 40px!important;
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 5em;
+  font-weight: 700;
+  color: #000;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.fab-left-top.searchBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  top: 7px!important;
+  left: inherit!important;
+}
+
+.fab-left-top.searchBar .navbar {
+  flex: 0.95;
+}
+/* .fab-left-top img {
+    width: 500px;
+} */
+
+.fab-right-bottom img {
+    height: 200px;
+}
+
+.fab-left-bottom  {
+	width:320px;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+.fab-left-bottom img {
+	width: 80px;
+	margin-right:15px;
+}
+
+.fab-left-bottom .temperatureTxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    word-wrap: break-word;
+    white-space: normal;
+    margin:0 2px;
+}
+
+.fab-left-bottom .weatherTxtStyle {
+	margin-left:15px;
+}
+
+.fab-left-bottom .weatherTxtStyle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.fab-right-top.btn {
+	top: 70px!important;
+}
+
+/* top: 150px -> 110px 축소 -40px // 180706 jg.kim */
+.fab-right-top.btn2 {
+	top: 150px!important;
+}
+
+/* top: 230px -> 150px 축소 -80px // 180706 jg.kim */
+.fab-right-top.btn3 {
+	top: 230px!important;
+}
+
+/* top: 310px -> 190px 축소 -120px // 180706 jg.kim */
+.fab-right-top.btn4 {
+	top: 310px!important;
+}
+
+/* top: 390px -> 230px 축소 -160px // 180706 jg.kim */
+.fab-right-top.btn5 {
+	top: 390px!important;
+}
+
+.fab-right-top.btn6 {
+	top: 470px!important;
+  font-size: 30px;
+}
+
+/* .imgLevel1 width: 50px -> .imgLevel1 width: 15px 이미지 사이즈 축소 // 180706 jg.kim */
+.fab-right-top .imgLevel1 {
+  width: 30px;
+}
+
+/* .imgLevel2 width: 30px -> .imgLevel2 width: 20px 이미지 사이즈 축소 // 180706 jg.kim */
+.fab-right-top .imgLevel2 {
+  width: 30px;
+}
+
+/* .imgLevel2 -> .imgLevel3 하나 더 만듬 // 180706 jg.kim */
+.fab-right-top .imgLevel3 {
+  width: 30px;
+}
+
+.fab i {
+    font-size:40px;
+}
+
+
+
+
+
+
+/* home_buttons.vue의 fab-buttons-reduce-size의 오른쪽에서 왼쪽으로 조금 이동
+ @override -> framework7 // margin-top:15px -> 30px // 180706 jg.kim start */
+.md .fab[class*="fab-right"] {
+  right: 30px;
+}
+/* end */
+
+/*navbar start*/
+
+/*navbar end*/
+
+.panel.panel-left.panel-active {
+    width: 300px;
+}
+
+.panel-left img {
+    width:30px;
+    opacity: 0.5;
+}
+
+
+
+iframe::-webkit-scrollbar {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.margin0 {
+    margin: 0!important;
+}
+
+.marginTop0 {
+    margin-top: 0!important;
+}
+
+#menuList .item-media img {
+    width:358px;
+    height:228px;
+}
+
+#menuTitle {
+    flex: 1;
+    /*left: -35px;*/
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#menuList .item-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#menuList .item-text {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.4;
+    max-height: none;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    /* line-height: 20px; */
+    max-height: 135px; /* Fallback for non-webkit */
+}
+
+#menuDetail .swiper-slide {
+    text-align: center;
+}
+
+#menuDetail .swiper-slide img{
+    border-radius: 1em;
+}
+
+
+.leftTitle {
+    margin: 0!important;
+    left: -10px;
+}
+
+#waiting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#waiting div {
+    width : 50%;
+}
+
+.flex1 {
+    flex:1;
+}
+
+.list, .scroll {
+    overflow: auto;
+    height: 95%;
+}
+
+.actions-grid .btn4 .actions-button {
+    width: 25%;
+}
+
+.actions-grid .btn5 .actions-button {
+    width: 20%;
+}
+
+.circleWrapper {
+    /*height: 100%;*/
+}
+
+.circle {
+  height: 5px;
+  width: 5px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.rect {
+  /*background-color: red;*/
+  height: 100%;
+}
+
+.info{
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    background: white;
+    border: 2px solid #999;
+    border-radius: 10px;
+}
+
+.loadingDiv {
+    z-index: 12000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0.2;
+}
+.loadingDiv div{
+    display:flex;
+    width:33%;
+    height:33%;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.kakaoNavi {
+    background-color:#FAE001!important;
+    color:#555!important;
+    line-height: 0!important;
+}
+
+.kakaoNavi span {
+    position: relative;
+    vertical-align: top;
+    top: 20px;
+}
+
+
+.kakaoNavi img {
+    display: inline-block;
+}
+
+.kakaoBtn {
+    background-color:#FFEB00!important;
+    color:#3C1E1E!important;
+    height: 50px!important;
+    line-height: 50px!important;
+}
+
+.kakaoBtn img,
+.naverBtn img,
+.googleBtn img {
+    position: relative;
+    top: 8px;
+    margin-right: 10px;
+    height: 35px;
+    width: 35px;
+}
+
+.naverBtn {
+    background-color:#2CC536!important;
+    color:#fff!important;
+    height: 50px!important;
+    line-height: 50px!important;
+}
+
+.googleBtn {
+    background-color:#FFF!important;
+    color:#757575!important;
+    height: 50px!important;
+    line-height: 50px!important;
+    border:1px solid #4A83E8!important;
+}
+
+
+
+.md .navbar {
+    height: 45px;
+    font-size: 17px;
+    background: #f7f7f8!important;
+    color: #212121;
+}
+
+.md .navbar-inner {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.md .navbar .left {
+    margin-right: 10px;
+}
+
+.md .navbar a.icon-only {
+    width: 44px;
+    margin: 0;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #007aff;
+}
+
+.md .navbar .right {
+    color: #007aff;
+}
+
+
+.md .searchbar {
+    height: 43px;
+    background: #f7f7f8;
+}
+
+.md .navbar .f7-icons, .md .toolbar .f7-icons {
+    font-size: 22px;
+}
+
+
+.md .searchbar-input-wrap {
+    height: 32px;
+}
+
+.md .page-content .searchbar {
+    border-radius: inherit;
+    margin: inherit;
+    box-shadow: inherit;
+}
+
+.md .searchbar input[type="search"], .md .searchbar input[type="text"] {
+    padding: 0 28px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+    border-radius: 8px;
+    font-family: inherit;
+    color: #000;
+    font-size: 17px;
+    font-weight: normal;
+    z-index: 30;
+    background-color: #e8e8ea;
+    position: relative;
+}
+
+
+#menuList .page-content {
+    padding-top:10px;
+}
+
+#menuList .list {
+    margin: 32px 0;
+    font-size: 16px;
+}
+
+.markerLabels {
+    white-space: nowrap;
+    left: 70px!important;
+}
+
+
+.map-icon-label .map-icon {
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.map-icon-label .map-icon img {
+  width: 12px;
+  height: 12px;
+  padding-left: 1px;
+  padding-top: 3px;
+}
+
+
+/* 뷰포트의 방향이 가로 모드(가로가 세로보다 더 길때) and max-width 가 900 이하일때. */
+@media all and (orientation:landscape) and (max-width:900px) {
+  .fab-left-top.txt {
+    top:55px!important;
+    font-size: 5vw;
+  }
+    .fab-left-top img {
+        width: 300px;
+    }
+
+    .fab-right-bottom img {
+        height: 100px;
+    }
+
+    .fab-left-bottom {
+        width: 260px;
+        height: 70px;
+    }
+
+    .fab-left-bottom img {
+        width: 50px;
+    }
+
+    .fab-left-bottom .temperatureTxt {
+        font-size: 26px;
+    }
+
+    .fab-left-bottom .weatherTxtStyle {
+        width: 100px;
+        font-size: 13px;
+    }
+
+    .fab i {
+        font-size:35px;
+    }
+
+    #menuList .item-media img {
+        width: 120px;
+        height: 100px;
+    }
+
+    #menuTitle {
+        font-size: 30px;
+    }
+
+    #menuList .item-title {
+        font-size: 20px;
+    }
+
+    #menuList .item-text {
+        font-size: inherit;
+        -webkit-line-clamp: 3;
+        max-height: 67px;
+        -webkit-box-orient:vertical;
+
+    }
+
+    .fab-right-top.btn {
+    	top: 70px!important;
+    }
+
+    /* top: 150px -> 110px 축소 -40px // 180706 jg.kim */
+    .fab-right-top.btn2 {
+    	top: 110px!important;
+    }
+
+    /* top: 230px -> 150px 축소 -80px // 180706 jg.kim */
+    .fab-right-top.btn3 {
+    	top: 150px!important;
+    }
+
+    /* top: 310px -> 190px 축소 -120px // 180706 jg.kim */
+    .fab-right-top.btn4 {
+    	top: 190px!important;
+    }
+
+    /* top: 390px -> 230px 축소 -160px // 180706 jg.kim */
+    .fab-right-top.btn5 {
+    	top: 230px!important;
+    }
+
+    .fab-right-top.btn6 {
+    	top: 270px!important;
+      font-size: 15px;
+    }
+
+    /* .imgLevel1 width: 50px -> .imgLevel1 width: 15px 이미지 사이즈 축소 // 180706 jg.kim */
+    .fab-right-top .imgLevel1 {
+    	width: 15px;
+    }
+
+    /* .imgLevel2 width: 30px -> .imgLevel2 width: 20px 이미지 사이즈 축소 // 180706 jg.kim */
+    .fab-right-top .imgLevel2 {
+    	width: 14px;
+    }
+
+    /* .imgLevel2 -> .imgLevel3 하나 더 만듬 // 180706 jg.kim */
+    .fab-right-top .imgLevel3 {
+    	width: 15px;
+    }
+
+    .fab i {
+        font-size:40px;
+    }
+
+    /* home_buttons.vue의 reduce-home-button-inner의 사이즈 축소 40px -> 20px // 180706 jg.kim start */
+    .fab i.reduce-home-button-inner {
+      font-size: 20px;
+    }
+    /* end */
+
+    /* home_buttons.vue의 reduce-home-button-inner-language의 사이즈 축소 30px -> 20px // 180706 jg.kim start */
+    .fab i.reduce-home-button-inner-language {
+      font-size: 15px;
+    }
+    /* end */
+
+    /* home_buttons.vue의 fab-buttons의 사이즈 축소 56px -> 24px // 180706 jg.kim start */
+    .fab a.reduce-home-button {
+      width: 24px;
+      height: 24px;
+    }
+    /* end */
+
+    /* home_buttons.vue의 fab-buttons-left의 사이즈 축소 40px -> 20px // 180706 jg.kim start */
+    .fab div.fab-buttons a.reduce-home-button01s {
+      width: 20px;
+      height: 20px;
+    }
+    /* end */
+
+    /* home_buttons.vue의 reduce-home-button01s-fontsize의 사이즈 축소 30px -> 8px // 180706 jg.kim start */
+    .fab div.fab-buttons a.reduce-home-button01s-fontsize {
+      font-size: 8px;
+    }
+    /* end */
+
+    /* home_buttons.vue의 fab-buttons-reduce-size의 사이즈 축소 margin-top:-30px -> -15px
+      top: 50% -> 70% // 180706 jg.kimstart */
+    .fab-buttons-reduce-size {
+      top: 70%;
+      height: 40px;
+      margin-top: -15px;
+    }
+    /* end */
+
+    /* home_buttons.vue의 fab-buttons-reduce-size의 오른쪽에서 왼쪽으로 조금 이동
+     @override -> framework7 // margin-top:15px -> 30px // 180706 jg.kim start */
+    .md .fab[class*="fab-right"] {
+      right: 15px;
+    }
+    /* end */
+
+    .swiper-slide img {
+      width:100%;
+      height:300px;
+    }
+}
+
+
+
+/* 사용자 해상도가 767px 이하일 때 그리고 세로모드 일때 이 코드가 실행됨. */
+@media all and (orientation:portrait) and (max-width:767px)  {
+  .fab-left-top.txt {
+    top:55px!important;
+    font-size: 10vw;
+  }
+
+	.fab-left-top img {
+		width: 200px;
+	}
+
+	.fab-right-bottom img {
+        height: 100px;
+    }
+
+    .fab-left-bottom {
+        width: 260px;
+        height: 70px;
+    }
+
+    .fab-left-bottom img {
+        width: 50px;
+    }
+
+
+    .fab-left-bottom .temperatureTxt {
+        font-size: 26px;
+    }
+
+    .fab-left-bottom .weatherTxtStyle {
+        width: 100px;
+        font-size: 13px;
+    }
+
+    .fab i {
+        font-size:35px;
+    }
+
+    #menuList .item-media img {
+        width: 120px;
+        height: 100px;
+    }
+    #menuTitle {
+        font-size: 30px;
+    }
+
+    #menuList .item-title {
+        font-size: 20px;
+    }
+
+    #menuList .item-text {
+        font-size: inherit;
+        -webkit-line-clamp: 3;
+        max-height: 67px;
+        -webkit-box-orient:vertical;
+    }
+
+    .fab-right-top.btn {
+    	top: 70px!important;
+    }
+
+    /* top: 150px -> 110px 축소 -40px // 180706 jg.kim */
+    .fab-right-top.btn2 {
+    	top: 110px!important;
+    }
+
+    /* top: 230px -> 150px 축소 -80px // 180706 jg.kim */
+    .fab-right-top.btn3 {
+    	top: 150px!important;
+    }
+
+    /* top: 310px -> 190px 축소 -120px // 180706 jg.kim */
+    .fab-right-top.btn4 {
+    	top: 190px!important;
+    }
+
+    /* top: 390px -> 230px 축소 -160px // 180706 jg.kim */
+    .fab-right-top.btn5 {
+    	top: 230px!important;
+    }
+
+    .fab-right-top.btn6 {
+    	top: 270px!important;
+      font-size: 15px;
+    }
+
+    /* .imgLevel1 width: 50px -> .imgLevel1 width: 15px 이미지 사이즈 축소 // 180706 jg.kim */
+    .fab-right-top .imgLevel1 {
+    	width: 15px;
+    }
+
+    /* .imgLevel2 width: 30px -> .imgLevel2 width: 20px 이미지 사이즈 축소 // 180706 jg.kim */
+    .fab-right-top .imgLevel2 {
+    	width: 14px;
+    }
+
+    /* .imgLevel2 -> .imgLevel3 하나 더 만듬 // 180706 jg.kim */
+    .fab-right-top .imgLevel3 {
+    	width: 15px;
+    }
+
+    .fab i {
+        font-size:40px;
+    }
+
+    /* home_buttons.vue의 reduce-home-button-inner의 사이즈 축소 40px -> 20px // 180706 jg.kim start */
+    .fab i.reduce-home-button-inner {
+      font-size: 20px;
+    }
+    /* end */
+
+    /* home_buttons.vue의 reduce-home-button-inner-language의 사이즈 축소 30px -> 20px // 180706 jg.kim start */
+    .fab i.reduce-home-button-inner-language {
+      font-size: 15px;
+    }
+    /* end */
+
+    /* home_buttons.vue의 fab-buttons의 사이즈 축소 56px -> 24px // 180706 jg.kim start */
+    .fab a.reduce-home-button {
+      width: 24px;
+      height: 24px;
+    }
+    /* end */
+
+    /* home_buttons.vue의 fab-buttons-left의 사이즈 축소 40px -> 20px // 180706 jg.kim start */
+    .fab div.fab-buttons a.reduce-home-button01s {
+      width: 20px;
+      height: 20px;
+    }
+    /* end */
+
+    /* home_buttons.vue의 reduce-home-button01s-fontsize의 사이즈 축소 30px -> 8px // 180706 jg.kim start */
+    .fab div.fab-buttons a.reduce-home-button01s-fontsize {
+      font-size: 8px;
+    }
+    /* end */
+
+    /* home_buttons.vue의 fab-buttons-reduce-size의 사이즈 축소 margin-top:-30px -> -15px
+      top: 50% -> 70% // 180706 jg.kimstart */
+    .fab-buttons-reduce-size {
+      top: 70%;
+      height: 40px;
+      margin-top: -15px;
+    }
+    /* end */
+
+    /* home_buttons.vue의 fab-buttons-reduce-size의 오른쪽에서 왼쪽으로 조금 이동
+     @override -> framework7 // margin-top:15px -> 30px // 180706 jg.kim start */
+    .md .fab[class*="fab-right"] {
+      right: 15px;
+    }
+    /* end */
+
+    .swiper-slide img {
+      width:100%;
+      height:300px;
+    }
+}
+
+
+/*scrollbar*/
+/* ie 용 스크롤 바 *********************************************/
+html { scrollbar-arrow-color: #efefef;
+        scrollbar-Track-Color: #efefef;
+        scrollbar-base-color: #dfdfdf;
+        scrollbar-Face-Color: #dfdfdf;
+        scrollbar-3dLight-Color: #dfdfdf;
+        scrollbar-DarkShadow-Color: #dfdfdf;
+        scrollbar-Highlight-Color: #dfdfdf;
+        scrollbar-Shadow-Color: #dfdfdf;
+        -ms-overflow-style: none;
+        overflow-style:none;
+    }
+/* Chrome, Safari용 스크롤 바 */
+/*::-webkit-scrollbar {display:none;}*/
+::-webkit-scrollbar {
+    width: 0px;
+    height: 12px;
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {display: block; width: 12px;height: 12px; background: rgba(0,0,0,.05);}
+::-webkit-scrollbar-track {     background: rgba(0,0,0,.05); }
+::-webkit-scrollbar-thumb {  background: rgba(0,0,0,.1);  }
+/* ------------------------------------------------------------ */
+/*scrollbar*/
+
+
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+ }
+
+/* alertify 관련 */
+.alertify button {
+  width: inherit;
+}
+
+.alertify .navi {
+  color: #3B91CD!important;
+}
+
+/* busStation 관련 */
+.my-sheet .left {
+  padding-left: 10px;
+}
+
+.my-sheet .sheet-modal-inner > div,
+.my-sheet .busArriveInfo {
+  margin: 16px 0;
+  height: 90%;
+  overflow-y: auto;
+}
+
+.my-sheet .busArriveInfo .busRoute {
+  display: flex;
+  border-bottom: 1px solid #b5b5b5;
+}
+
+.my-sheet .busArriveInfo .busRoute .left{
+  flex: 1;
+  line-height: 3;
+}
+
+.my-sheet .busArriveInfo .busRoute .right{
+  flex: 1;
+  color:#cc2e2e;
+  text-align: right;
+}
+.my-sheet .busArriveInfo .busRoute .noData {
+  color: #767676;
+}
+
+.my-sheet .busArriveInfo .busRoute .middle {
+  line-height: 3;
+}
+
+#cultureSheet {
+  height: 500px;
+}
+
+.my-sheet .cultureInfo {
+  margin: 0;
+  height: 90%;
+  overflow-y: auto;
+}
+
+.iconMarker {
+  z-index: 250;
+  position: absolute;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.pictoMarker {
+  z-index: 100;
+  position: absolute;
+  cursor: pointer;
+}
+
+.pictoMarker img {
+  width:20px;
+  height:20px;
+}
+
+.symbol .textMarker,
+.iconMarker .textMarker,
+.imageMarker .textMarker,
+.pictoMarker .textMarker {
+  position: absolute;
+  background-color: transparent;
+  white-space: nowrap;
+  font-size: 12px;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  text-align: center;
+}
+
+.imageMarker {
+  position: absolute;
+  cursor: pointer;
+  z-index: 300;
+}
+.minimapImageMarker {
+  position: absolute;
+  left:30px;
+  top:35px;
+  cursor: pointer;
+  z-index: 300;
+}
+
+.imageMarker img {
+  position: absolute;
+  /* left: -25px;
+  top: -50px;
+  width: 50px;
+  height: 50px; */
+  user-select: none;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  opacity: 1;
+}
+
+.symbol {
+  position: absolute;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.symbol.scale {
+  transform: scale(0.5);
+}
+.symbol iframe {
+    border: none;
+}
+
+.symbol .iframeEvent {
+  z-index:200;
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+
+.sheet-modal .toolbar {
+  background: #2196f3!important;
+  height: 48px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.sheet-modal .toolbar a.link {
+  color: #fff;
+}
+
+.sheet-modal {
+  background: #fff!important;
+}
+
+.sheet-modal .toolbar a.link {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 16px;
+  min-width: 48px;
+  line-height: 48px;
+  height: 48px;
+}
+
+.ios .sheet-modal .toolbar a.link{
+  padding: 0;
+}
+
+.md .navbar:after {
+  background-color: #c4c4c4!important;
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  display: block;
+  z-index: 15;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  height: 1px;
+  width: 100%;
+  -webkit-transform-origin: 50% 100%;
+}
+
+#join input,
+#login input{
+  border: 1px solid #aaa;
+  height: 50px;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+
+.h45 {
+  height: 45px;
+}
+
+#terms textarea {
+  width: 100%;
+  border: 1px solid gray;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.login-screen {
+  z-index: 5500;
+}
+.popup {
+  z-index: 5000;
+}
+.popup-backdrop {
+  z-index: 4999;
+}
+
+#terms .icon-checkbox {
+  margin-right: 15px;
+}
+
+.snsBtns {
+  display: flex;
+}
+
+.snsBtns div {
+  height: 50px;
+  width: 27%;
+  margin-right: 10px;
+}
+
+.snsBtns div img {
+  height: 100%;
+  width: 100%;
+}
+
+.snsBtns .google {
+  width: 40%;
+  margin: 0;
+}
+
+.ios .login-screen-content {
+  padding-top: 30px!important;
+}
+
+.userTitle {
+  color: #224ddd!important;
+  font-size: 16px;
+}
+
+#loadingArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:#E84200;
+}
+
+#loadingArea .loadingImg {
+  display:flex;
+  justify-content: center;
+}
+
+#loadingArea .loadingImg img {
+  width: 250px;
+  height: 200px;
+}
+
+#loadingArea #lottieDiv {
+  width:100%;
+  height:150px;
+}
+
+.swiper-slide img {
+  max-height:500px;
+}
+
+
+.ios .navbar ~ *:not(.no-navbar) .page-content, .ios .navbar ~ .page-content {
+  padding-top: 0px;
+}
